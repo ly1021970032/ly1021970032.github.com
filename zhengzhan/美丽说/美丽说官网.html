@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+table{border-collapse:collapse;}
+th,td{border:1px solid #000; padding:0;}
+
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+
+.w{width:1200px; margin:0 auto;}
+/*顶部导航*/
+.top-nav{width:100%; height:30px; border-bottom:1px solid #f2f2f2;}
+.top-nav-inner{height:30px;}
+.top-nav-inner .top-nav-list{}
+.top-nav-inner .top-nav-list li{float:left; line-height:30px;}
+.top-nav-inner .top-nav-list li a{padding:0px 18px;  border-right:1px dotted #303; font-size:12px; color:#666; line-height:18px; display:inline-block;}
+.top-nav-inner .top-nav-list li a.last{border-right:none; }
+.top-nav-inner .top-nav-list li a span.wx{background:url(img/wx.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span.member{background:url(img/index.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span{background:url(img/mls_global140607.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span.qq{background-position:-188px -20px;}
+.top-nav-inner .top-nav-list li a span.car{background-position:0  -164px;}
+.top-nav-inner .top-nav-list li a span.order{background-position:-222px  -44px;}
+.top-nav-inner .top-nav-list li a span.download{background-position:-170px  -44px;}
+.top-nav-inner .top-nav-list li a .arrow{width:6px; height:3px; background:url(img/mls_global140607.png) -22px -70px no-repeat; display:inline-block;}
+.top-nav-inner .top-nav-list li a .num{padding:0 6px; height:14px; line-height:14px; font-size:12px; color:#fff; display:inline-block; background:#f69;}
+/*搜索和logo*/
+.search{margin-top:20px;}
+.search .logo{width:123px; height:45px; background:url(img/logo.png) no-repeat; text-indent:-999em;  margin-top:20px;}
+.search .text{width:161px; height:45px; margin-top:20px; margin-right:76px;}
+.search .fashion{width:145px; height:45px;margin-top:20px;}
+.search .search-item span{width:56px; height:26px; background:#f2f2f2; text-align:center; line-height:26px; color:#666; font-size:12px;}
+.search .search-item span.one{background:#f69; color:#fff;}
+.search .search-content{border:2px solid #f69;}
+.search .search-content input{width:444px; height:30px; border:none;}
+.search .search-content a{width:70px; height:30px; background:url(img/search.png);}
+/*主导航*/
+.main-nav .main-nav-list {border-bottom:2px solid #f69; margin-top:38px;}
+.main-nav .main-nav-list li{float:left; font-size:16px; height:46px; line-height:46px;}
+.main-nav .main-nav-list li a{padding:0 15px;}
+.main-nav .main-nav-list li a.active{color:#f69;}
+/*banner*/
+.banner .banner-l{width:238px; height:570px; border:1px solid #e6e6e6;}
+.banner .banner-r{width:960px; height:570px; margin-bottom:35px;}
+.banner .banner-l .side-nav li{width:198px; height:87px; border-bottom:1px dotted #666; padding-top:16px; margin:0 auto; padding-bottom:10px;}
+.banner .banner-l .side-nav li.last{border-bottom:none;}
+.banner .banner-l .side-nav li .title a{font-size:16px; color:#f69;}
+.banner .banner-l .side-nav li .content{line-height:24px; margin-top:8px;}
+.banner .banner-l .side-nav li .content a{font-size:12px; color:#666; float:left; margin-right:10px;}
+.banner .banner-l .side-nav li .content a.one{color:#f69;}
+.banner .banner-bg{width:960px; height:420px; background:url(img/bg.png) no-repeat; position:relative;}
+.banner .banner-bg a{width:34px; height:44px; position:absolute; top:50%; margin-top:-22px;}
+.banner .banner-bg a.l{left:0; background:url(img/bnr_btn_left1.png) no-repeat;}
+.banner .banner-bg a.r{right:0; background:url(img/bnr_btn_right1.png) no-repeat;}
+.banner .banner-list {margin-top:4px;}
+.banner .banner-list li{float:left; width:182px; height:144px; margin-left:9px;}
+/**/
+.bb{width:1200px; height:38px; overflow:hidden; font-family:'微软雅黑';}
+.bb .bb-a{width:205px; height:38px; float:left;}
+.bb .bb-b{width:995px; height:17px; float:left; border-bottom:1px solid #ededed;}
+.bb .bb-1{font-size:20px; color:#666;}
+.bb .bb-a span{ font-size:11px; color:#999; margin-left:5px;}
+.bb .bb-b .bb-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.bb .bb-b img{ margin-left:2px;}
+.cc{width:1200px; height:415px; overflow:hidden;}
+.cc .cc-a{width:386px; height:376px; float:left; margin-right:20px;}
+.cc .cc-a img{width:100%; height:100%;}
+.cc .cc-p{width:260px; height:368px; float:left; margin-right:2px;}
+.cc .cc-o{width:124px; height:124px; float:left;}
+.cc .cc-o img{width:100%; height:100%;}
+.cc .cc-i{width:124px; height:124px; float:left; margin-top:2px;}
+.cc .cc-i img{width:100%; height:100%;}
+.cc .cc-b{width:386px; height:376px; float:left; margin-right:20px;}
+.cc .cc-b img{width:100%; height:100%;}
+.cc .cc-p{width:260px; height:368px; float:left; margin-right:2px;}
+.cc .cc-o{width:124px; height:124px; float:left;}
+.cc .cc-o img{width:100%; height:100%;}
+.cc .cc-i{width:124px; height:124px; float:left; margin-top:2px;}
+.cc .cc-i img{width:100%; height:100%;}
+.cc .cc-c{width:386px; height:376px; float:left;}
+.cc .cc-c img{width:100%; height:100%;}
+.cc .cc-p{width:260px; height:368px; float:left; margin-right:2px;}
+.cc .cc-o{width:124px; height:124px; float:left;}
+.cc .cc-o img{width:100%; height:100%;}
+.cc .cc-i{width:124px; height:124px; float:left; margin-top:2px;}
+.cc .cc-i img{width:100%; height:100%;}
+.dd{width:1200px; height:38px; overflow:hidden; font-family:'微软雅黑';}
+.dd .dd-a{width:153px; height:38px; float:left;}
+.dd .dd-b{width:1040px; height:17px; float:left; border-bottom:1px solid #ededed;}
+.dd .dd-1{font-size:20px; color:#666;}
+.dd .dd-a span{ font-size:11px; color:#999; margin-left:5px;}
+.dd .dd-b .dd-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.dd .dd-b img{ margin-left:2px;}
+.ee{width:1200px; height:228px; overflow:hidden; font-family:'微软雅黑';}
+.ee img{margin-right:20px; float:left;}
+.ee .ee-a{margin-right:auto;}
+.ff .ff-a{width:207px; height:38px; float:left; font-family:'微软雅黑';}
+.ff .ff-b{width:993px; height:17px; float:left; border-bottom:1px solid #ededed;}
+.ff .ff-1{font-size:20px; color:#666;}
+.ff .ff-a span{ font-size:11px; color:#999; margin-left:5px;}
+.ff .ff-b .ff-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.gg{width:1220px; height:875px; overflow:hidden;}
+.gg li{float:left; width:224px; height:437px; margin-right:20px;}
+.gg .gg-p{margin-right:auto;}
+.gg .gg-a{font-size:13px; color:#ff6699; float:left; width:224px; margin-top:19px;}
+.gg .gg-b{font-size:12px; color:#9a9a9a; float:right;}
+.gg .gg-c{float:left; font-size:12px; color:#666; margin-top:10px;}
+.hh .hh-a{width:245px; height:38px; float:left; font-family:'微软雅黑';}
+.hh .hh-b{width:975px; height:17px; float:left; border-bottom:1px solid #ededed;}
+.hh .hh-1{font-size:20px; color:#666;}
+.hh .hh-a span{ font-size:11px; color:#999; margin-left:5px;}
+.hh .hh-b .hh-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+
+.to{width:1200px; height:369px; overflow:hidden;}
+.to-a,.to-b,.to-c{width:386px; height:369px; float:left; margin-right:14px;}
+.to .to-1{font-size:14px; color:#ff66a6; margin-top:23px; font-family:'微软雅黑';}
+.to .to-4{font-size:11px; margin-right:10px;}
+.to .to-5{font-size:11px; color:#b3b3b3; margin-left:26px;}
+.to .to-2{font-size:14px; color:#666; margin-top:10px; margin-bottom:10px; font-family:'微软雅黑';}
+.to .to-3{font-size:12px; color:#999; font-family:'微软雅黑';}
+.jj{width:1200px; height:92px;}
+.jj .jj-a{width:207px; height:38px; float:left; font-family:'微软雅黑'; margin-top:53px;}
+.jj .jj-b{width:993px; height:17px; float:left; border-bottom:1px solid #ededed; margin-top:53px;}
+.jj .jj-1{font-size:20px; color:#666;}
+.jj .jj-a span{ font-size:11px; color:#999; margin-left:5px;}
+.jj .jj-b .jj-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.kk{width:1200px; height:528px; overflow:hidden;}
+.kk .kk-a{width:387px; height:528px; float:left;}
+.kk .kk-b{width:387px; height:528px; margin-left:19px; margin-right:20px; float:left;}
+.kk .kk-c{width:387px; height:528px; float:left;}
+.kk .kk-1{ font-size:14px; color:#ff6fa1; margin-top:16px; font-family:'微软雅黑';}
+.kk .kk-2{ font-size:14px; color:#666; margin-top:10px; font-family:'微软雅黑';}
+.kk .kk-3{font-size:11px; color:#999; margin-top:10px; font-family:'微软雅黑';}
+.kk .kk-4{font-size:12px; color:#ff6699; margin-top:10px; font-family:'微软雅黑';}
+.kk .kk-o{background:url(img/1.png) 5px 2px no-repeat; padding:10px 20px;}
+.ii{width:1200px; height:92px;}
+.ii .ii-a{width:190px; height:38px; float:left; font-family:'微软雅黑'; margin-top:53px;}
+.ii .ii-b{width:1010px; height:17px; float:left; border-bottom:1px solid #ededed; margin-top:53px;}
+.ii .ii-1{font-size:20px; color:#666;}
+.ii .ii-a span{ font-size:11px; color:#999; margin-left:5px;}
+.ii .ii-b .ii-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.ll{width:1200px; height:36px;}
+.ll ul{margin-left:300px;}
+.ll ul li a{font-size:16px; color:#666; float:left; width:65px; margin-right:42px; font-family:'微软雅黑'}
+.ll ul li a:hover{color:#ff6699; border-bottom:2px solid #ff6699; padding-bottom:3px;}
+.ll ul li a:active{color:#ff6699; border-bottom:2px solid #ff6699; padding-bottom:3px;}
+.mm{width:1200px; height:422px; overflow:hidden;}
+.mm .mm-a{width:386px; height:422px; float:left; margin-right:20px;}
+.mm .mm-b{width:386px; height:422px; float:left; margin:0;}
+.mm img{ float:left;}
+.mm .mm-q{ margin-right:2px;}
+.mm .mm-w{ margin-bottom:3px;}
+.mm .mm-1{ font-size:20px; color:#666; text-align:center; font-family:'微软雅黑'; margin-top:25px;}
+.mm .mm-2{ font-size:12px; color:#999; text-align:center; font-family:'微软雅黑'; margin-top:9px;}
+.mm .mm-3{font-size:11px; color:#666; text-align:center; font-family:'微软雅黑'; margin-top:14px;}
+.mm span{ color:#ff6699; margin-right:11px;}
+.nn{width:1200px; height:92px;}
+.nn .nn-a{width:194px; height:38px; float:left; font-family:'微软雅黑'; margin-top:53px;}
+.nn .nn-b{width:1006px; height:17px; float:left; border-bottom:1px solid #ededed; margin-top:53px;}
+.nn .nn-1{font-size:20px; color:#666;}
+.nn .nn-a span{ font-size:11px; color:#999; margin-left:5px;}
+.nn .nn-b .nn-3{float:right; font-size:12px; color:#999; margin-right:10px;}
+.nn .nn-b span{ background:url(img/1.png) 1px -195px no-repeat; padding:10px 12px;}
+.jw{width:1200px; height:316px; border-top:1px solid #ddd; background:#f5f5f5; margin-top:31px;}
+.jw .jw-a{width:1200px; height:215px;}
+.jw .jw-b{width:236px; height:215px; float:left;}
+.jw .jw-b dl{float:left; margin-top:40px;}
+.jw .jw-b dt{float:left; height:60px; background:url(img/2.png) 1px -104px no-repeat; padding:0px 23px;}
+.jw .jw-b dd{float:left; line-height:24px; font-size:12px; color:#666; font-family:'微软雅黑';}
+.jw .jw-b .jw-1{font-size:18px; font-family:'微软雅黑';}
+.jw .jw-c{width:460px; height:215px; float:left;}
+.jw .jw-c .jw-d{width:113px; height:215px; float:left;}
+.jw .jw-c dl{line-height:27px; font-family:'微软雅黑'; color:#7e7e7e; float:left; font-size:12px; margin-left:49px; margin-top:35px;}
+.jw .jw-c dt{font-size:16px; color:#666; font-family:'微软雅黑'; font-weight:bold;}
+.jw .jw-c .jw-p{margin:35px 0;}
+.jw .jw-o{background:url(img/2.png) 0 -21px no-repeat; padding:0 10px;}
+.jw .jw-i{background:url(img/2.png) -73px -21px no-repeat; padding:0 10px;}
+.jw .jw-u{background:url(img/2.png) -49px -21px no-repeat; padding:0 10px;}
+.jw-e{width:440px; height:215px; float:left;}
+.jw-e p{color:#666; margin-top:35px; margin-bottom:15px;  font-weight:bold;  font-size:15px; font-family:'微软雅黑';}
+.jw .jw-f{width:1200px; height:30px; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.jw .jw-f p{float:right; margin-top:8px; font-size:12px; color:#666; font-family:'微软雅黑'; margin-right:24px;}
+.jw .jw-f ul{float:left; margin-left:10px; float:left;}
+.jw .jw-f li{float:left; margin-right:10px; color:#666; font-size:12px; line-height:30px; font-family:'微软雅黑';}
+.jw .jw-z{width:1200px; height:69px; border-bottom:1px solid #ddd; margin-left:10px; font-size:12px; color:#737373; font-family:'微软雅黑'; margin-top:16px; line-height:23px;}
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+<div class="top-nav">
+	<div class="w top-nav-inner clearfix">
+    	<ul class="top-nav-list fr">
+        	<li>
+            	<a href="#">
+                	<span class="wx"></span>	
+                微信登录
+                </a>
+            </li>
+            <li>
+            	<a href="#">
+                	<span class="qq"></span>
+                QQ登录</a>
+            </li>
+            <li>
+            	<a href="#">登录</a>
+            </li>
+            <li>
+            	<a href="#">注册</a>
+            </li>
+            <li>
+            	<a href="#">
+                	<span class="car"></span>
+                我的购物车
+                	<i class="num">0</i>
+                </a>
+            </li>
+            <li>
+            	<a href="#">
+                	<span class="order"></span>
+                我的订单
+                </a>
+            </li>
+            <li>
+            	<a href="#">
+                	<span class="member"></span>
+                美丽说会员
+                </a>
+            </li>
+            <li>
+            	<a href="#">
+                	<span class="download"></span>
+                下载app
+                	<i class="arrow"></i>
+                </a>
+            </li>
+            <li>
+            	<a href="#" class="last">帮助中心</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--搜索和logo-->
+<div class="w search clearfix">
+	<a href="#" class="fl logo">
+    	美丽说
+    </a>
+    <a href="#" class="fl text">
+    	<img src="img/text.png"/>
+    </a>
+    <div class="search-tab fl">
+    	<p class="clearfix search-item">
+        	<span class="fl one">宝贝</span>
+            <span class="fl two">店铺</span>
+        </p>
+        <div class="clearfix search-content">
+        	<input type="text" class="fl" placeholder="搜流行宝贝"/>
+            <a href="#" class="fl"></a>
+        </div>
+    </div>
+    <a href="#" class="fr fashion">
+    	<img src="img/active.png"/>
+    </a>
+</div>
+<!--主导航-->
+<div class="main-nav">
+	<div class="w">
+    	<ul class="main-nav-list clearfix">
+        	<li><a href="#" class="active">首页</a></li>
+            <li><a href="#">最热</a></li>
+            <li><a href="#">上衣</a></li>
+            <li><a href="#">裙子</a></li>
+            <li><a href="#">裤子</a></li>
+            <li><a href="#">鞋子</a></li>
+            <li><a href="#">包包</a></li>
+            <li><a href="#">配饰</a></li>
+            <li><a href="#">内衣</a></li>
+            <li><a href="#">美妆</a></li>
+            <li><a href="#">男装</a></li>
+            <li><a href="#">童装</a></li>
+            <li><a href="#">家具</a></li>
+            <li><a href="#">小家电</a></li>
+            <li><a href="#">食品</a></li>
+        </ul>
+    </div>
+</div>
+<!--banner-->
+<div class="w banner clearfix">
+	<div class="banner-l fl">
+    	<ul class="side-nav">
+        	<li>
+            	<h3 class="title"><a href="#">每日精选</a></h3>
+                <p class="content">
+                	<a href="#" class="one">秋冬新品</a>
+                    <a href="#">魅力性感</a>
+                    <a href="#" class="one">毛呢外套</a>
+                    <a href="#" class="one">时尚套装</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#" class="one">短靴</a>
+                    <a href="#">运动鞋</a>
+                    <a href="#">热销零食</a>
+                    <a href="#" class="one">韩货优选</a>
+                </p>
+            </li>
+            <li>
+            	<h3 class="title"><a href="#">每日精选</a></h3>
+                <p class="content">
+                	<a href="#" class="one">秋冬新品</a>
+                    <a href="#">魅力性感</a>
+                    <a href="#" class="one">毛呢外套</a>
+                    <a href="#" class="one">时尚套装</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#" class="one">短靴</a>
+                    <a href="#">运动鞋</a>
+                    <a href="#">热销零食</a>
+                    <a href="#" class="one">韩货优选</a>
+                </p>
+            </li>
+            <li>
+            	<h3 class="title"><a href="#">每日精选</a></h3>
+                <p class="content">
+                	<a href="#" class="one">秋冬新品</a>
+                    <a href="#">魅力性感</a>
+                    <a href="#" class="one">毛呢外套</a>
+                    <a href="#" class="one">时尚套装</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#" class="one">短靴</a>
+                    <a href="#">运动鞋</a>
+                    <a href="#">热销零食</a>
+                    <a href="#" class="one">韩货优选</a>
+                </p>
+            </li>
+            <li>
+            	<h3 class="title"><a href="#">每日精选</a></h3>
+                <p class="content">
+                	<a href="#" class="one">秋冬新品</a>
+                    <a href="#">魅力性感</a>
+                    <a href="#" class="one">毛呢外套</a>
+                    <a href="#" class="one">时尚套装</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#" class="one">短靴</a>
+                    <a href="#">运动鞋</a>
+                    <a href="#">热销零食</a>
+                    <a href="#" class="one">韩货优选</a>
+                </p>
+            </li>
+            <li class="last">
+            	<h3 class="title"><a href="#">每日精选</a></h3>
+                <p class="content">
+                	<a href="#" class="one">秋冬新品</a>
+                    <a href="#">魅力性感</a>
+                    <a href="#" class="one">毛呢外套</a>
+                    <a href="#" class="one">时尚套装</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#" class="one">短靴</a>
+                    <a href="#">运动鞋</a>
+                    <a href="#">热销零食</a>
+                    <a href="#" class="one">韩货优选</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="banner-r fl">
+    	<div class="banner-bg">
+        	<a href="#" class="l"></a>
+            <a href="#" class="r"></a>
+        </div>
+        <div class="banner-item">
+        	<ul class="banner-list clearfix">
+            	<li>
+                	<a href="#">
+                    	<img src="img/aa-1.png"/>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="img/aa-2.png"/>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="img/aa-3.png"/>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="img/aa-4.png"/>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="img/aa-5.png"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div class="bb">
+	<div class="bb-a">
+    	<p class="bb-1">疯狂星期五<span>正确流行 新款大促</span></p>
+    </div>
+	<div class="bb-b"><p class="bb-3">往期回顾<img src="img/a1.png" /></p></div>
+</div>
+<div class="cc">
+	<div  class="cc-a">
+    	<div class="cc-p">
+    	<img src="img/c1.jpg" />
+        </div>
+        <div class="cc-o">
+        	<img src="img/c2.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c3.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c4.jpg" />
+        </div>
+    </div>
+    <div  class="cc-b">
+    	<div class="cc-p">
+    	<img src="img/c5.jpg" />
+        </div>
+        <div class="cc-o">
+        	<img src="img/c6.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c7.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c8.jpg" />
+        </div>
+    </div>
+    <div  class="cc-c">
+    	<div class="cc-p">
+    	<img src="img/c9.jpg" />
+        </div>
+        <div class="cc-o">
+        	<img src="img/c10.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c11.jpg" />
+        </div>
+        <div class="cc-i">
+        	<img src="img/c12.jpg" />
+        </div>
+    </div>
+</div>
+<div class="dd">
+	<div class="dd-a">
+    	<p class="dd-1">疯狂星期五<span>疯狂新款</span></p>
+    </div>
+	<div class="dd-b"></div>
+</div>
+<div class="ee">
+	<img src="img/d1.png" />
+    <img src="img/d2.jpg" />
+    <img src="img/d3.jpg" />
+    <img src="img/d4.jpg" />
+    <img src="img/d5.jpg" />
+    <img src="img/d6.jpg"  class="ee-a"/>
+</div>
+<div class="ff">
+	<div class="ff-a">
+    	<p class="ff-1">疯狂星期五<span>尖端来袭 要你好看</span></p>
+    </div>
+	<div class="ff-b"><p class="ff-3">更多新品<img src="img/a1.png" /></p></div>
+</div>
+<div class="gg">
+	<ul>
+    	<li>
+        <img src="img/g_02.jpg" />
+        <p class="gg-a">￥110.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_04.jpg" />
+        <p class="gg-a">￥69.96<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">格子长款包臀毛呢半身裙</p>
+        </li>
+    	<li>
+        <img src="img/g_06.jpg" />
+        <p class="gg-a">￥75.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_08.jpg" />
+        <p class="gg-a">￥133.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_10.png"  class="gg-p"/>
+        <p class="gg-a">￥512.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_16.jpg" />
+        <p class="gg-a">￥39.90<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_17.jpg" />
+        <p class="gg-a">￥59.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_18.jpg" />
+        <p class="gg-a">￥168.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_19.jpg" />
+        <p class="gg-a">￥277.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_20.png" class="gg-p" />
+        <p class="gg-a">￥76.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    </ul>
+</div>
+<div class="hh">
+	<div class="hh-a">
+    	<p class="hh-1">Desire明星同款<span>明星热捧最IN单品</span></p>
+    </div>
+	<div class="hh-b"><p class="hh-3">更多明星同款<img src="img/a1.png" /></p></div>
+</div>
+<div class="to">
+	<div class="to-a">
+    	<img src="img/to1.png" />
+        <p class="to-1"><span class="to-4">DESIRE价：</span>￥209.10原款价<span class="to-5">￥1,650.00</span></p>
+        <p class="to-2">Samantha Thavasa同款经典锁头包</p>
+        <p class="to-3">【日本的香奈儿】VIVI杂志多个模特秀，lena也秀！！韩国少女时代，尹</p>
+        <p class="to-3">恩惠还有米兰达·可儿也有代言哦~年底种"趴"都能用的上。</p>
+    </div>
+    <div class="to-b">
+    	<img src="img/to2.png" />
+        <p class="to-1"><span class="to-4">DESIRE价：</span>￥87.00原款价<span class="to-5">￥249.00</span></p>
+        <p class="to-2">ZARA同款 清新印花背带裙</p>
+        <p class="to-3">【这个冬天不单调】清新的复古印花，如迷雾林走出的青涩女孩，开启</p>
+        <p class="to-3">一段醺美之旅</p>
+    </div>
+    <div class="to-c">
+    	<img src="img/to3.png" />
+        <p class="to-1"><span class="to-4">DESIRE价：</span>￥159.00原款价<span class="to-5">￥910.00</span></p>
+        <p class="to-2">LilyBrown同款 复古U型连衣裙</p>
+        <p class="to-3">【怀着对古着魅力的敬仰】温暖的色彩，独特的质感，复古中带着一种少</p>
+        <p class="to-3">女情怀，让人充满元气的连衣裙~</p>
+    </div>
+</div>
+<div class="jj">
+	<div class="jj-a">
+    	<p class="jj-1">疯狂星期五<span>尖端来袭 要你好看</span></p>
+    </div>
+	<div class="jj-b"><p class="jj-3">更多新品<img src="img/a1.png" /></p></div>
+</div>
+<div class="kk">
+	<div class="kk-a">
+    	<img src="img/kk-1.png" />
+    	<p class="kk-1">￥6.20</p>
+        <p class="kk-2">夜间孝素单面包</p>
+        <p class="kk-3">【跳5遍郑多燕，也不如吃一袋它】游泳、跑步、郑多燕...拼了老命的运</p>
+        <p class="kk-3">动，只为了变瘦变美，嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+        <p class="kk-4"><span class="kk-o"></span>减肥  排毒  新谷</p>
+    </div>
+	<div class="kk-b">
+    	<img src="img/kk-2.png" />
+    	<p class="kk-1">￥48.00</span><span class="kk-p">￥129.00</span></p>
+        <p class="kk-2">CANMAKE唇部美容液</p>
+        <p class="kk-3">【跳5遍郑多燕，也不如吃一袋它】游泳、跑步、郑多燕...拼了老命的运</p>
+        <p class="kk-3">动，只为了变瘦变美，嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+        <p class="kk-4"><span class="kk-o"></span>唇膏  CANMAKE</p>
+    </div>
+	<div class="kk-c">
+    	<img src="img/kk-3.png" />
+    	<p class="kk-1">￥89.00</p>
+        <p class="kk-2">日本快速增长修型护洗发水</p>
+        <p class="kk-3">【跳5遍郑多燕，也不如吃一袋它】游泳、跑步、郑多燕...拼了老命的运</p>
+        <p class="kk-3">动，只为了变瘦变美，嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+        <p class="kk-4"><span class="kk-o"></span>水  无硅油  Elence</p>
+    </div>
+</div>
+<div class="ii">
+	<div class="ii-a">
+    	<p class="ii-1">好店推荐<span>店铺精选 品质保证</span></p>
+    </div>
+	<div class="ii-b"><p class="ii-3">更多好店<img src="img/a1.png" /></p></div>
+</div>
+<div class="ll">
+	<ul>
+        <li><a href="#">魅力女装</a></li>
+        <li><a href="#">时尚包包</a></li>
+        <li><a href="#">潮流美鞋</a></li>
+        <li><a href="#">必备小物</a></li>
+        <li><a href="#">精品男装</a></li>
+    </ul>
+</div>
+<div class="mm">
+	<div class="mm-a">
+      <img src="img/mm1.png"  class="mm-q"/>
+      <img src="img/mm1-1.png"  class="mm-w"/>
+      <img src="img/mm1-2.png" />
+        <p class="mm-1">宠儿自制 - 原创女装店</p>
+        <p class="mm-2">宠儿自制，自主设计生产，自由工厂，为您提供最优质的商品及服务！</p>
+        <p class="mm-3">销量 <span>130796</span>   评分 <span>4.9</span></p>
+  </div>
+	<div class="mm-a">
+        <img src="img/mm2.png"  class="mm-q"/>
+        <img src="img/mm2-1.png"  class="mm-w"/>
+        <img src="img/mm2-2.png" />
+        <p class="mm-1">rechelchloe(瑞可儿)旗航店</p>
+        <p class="mm-2">RachelChloe(瑞可儿)欢迎您的惠顾，相信您与我们的邂逅不止于时</p>
+        <p class="mm-3">销量 <span>5006</span>   评分 <span>4.9</span></p>  
+    </div>
+	<div class="mm-b">
+        <img src="img/mm3.png"  class="mm-q"/>
+        <img src="img/mm3-1.png"  class="mm-w"/>
+        <img src="img/mm3-2.png" />
+        <p class="mm-1">西西小可</p>
+        <p class="mm-2">西西小可 潮品女装 每周三上新</p>
+        <p class="mm-3">销量 <span>5006</span>   评分 <span>4.9</span></p>
+    </div>
+</div>
+<div class="nn">
+	<div class="nn-a">
+    	<p class="nn-1">为你推荐<span>为你精挑细选的宝贝</span></p>
+    </div>
+	<div class="nn-b"><p class="nn-3">换一批<span></span></p></div>
+</div>
+<div class="gg">
+	<ul>
+    	<li>
+        <img src="img/g_02.jpg" />
+        <p class="gg-a">￥110.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_04.jpg" />
+        <p class="gg-a">￥69.96<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">格子长款包臀毛呢半身裙</p>
+        </li>
+    	<li>
+        <img src="img/g_06.jpg" />
+        <p class="gg-a">￥75.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_08.jpg" />
+        <p class="gg-a">￥133.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    	<li>
+        <img src="img/g_10.png"  class="gg-p"/>
+        <p class="gg-a">￥512.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_16.jpg" />
+        <p class="gg-a">￥39.90<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_17.jpg" />
+        <p class="gg-a">￥59.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_18.jpg" />
+        <p class="gg-a">￥168.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_19.jpg" />
+        <p class="gg-a">￥277.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+        <li>
+        <img src="img/g_20.png" class="gg-p" />
+        <p class="gg-a">￥76.00<span class="gg-b">❤ 2355</span></p>
+        <p class="gg-c">秋冬蝙蝠袖波浪边短款外套</p>
+        </li>
+    </ul>
+</div>
+<div class="jw">
+	<div class="jw-a">
+    	<div class="jw-b">
+        	<dl>
+            	<dt></dt>
+                <dd class="jw-1">4000-800-577</dd>
+                <dd>美丽说客服热线</dd>
+                <dd>周一至周日：8:00-24:00</dd>
+            </dl>
+        </div>
+        <div class="jw-c">
+        	<div>
+            	<dl class="jw-p">
+                	<dt>买家帮助</dt>
+                    <dd>新手指南</dd>
+                    <dd>服务保障</dd>
+                    <dd>帮助中心</dd>
+                </dl>
+            </div>
+            <div>
+            	<dl>
+                	<dt>商家帮助</dt>
+                    <dd>商家入驻</dd>
+                    <dd>商家推广</dd>
+                    <dd>帮助中心</dd>
+                </dl>
+            </div>
+            <div>
+            	<dl>
+                	<dt>关于我们</dt>
+                    <dd>关于美丽说</dd>
+                    <dd>联系我们</dd>
+                    <dd>加入美丽说</dd>
+                </dl>
+            </div>
+            <div>
+            	<dl>
+                	<dt>关注我们</dt>
+                    <dd><span class="jw-o"></span>新浪微博</dd>
+                    <dd><span class="jw-i"></span>QQ空间</dd>
+                    <dd><span class="jw-u"></span>腾讯微博</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="jw-e">
+        <p>美丽说微信服务号</p>
+        <img src="img/rmm.png" />
+        </div>
+    </div>
+    <div class="jw-f">
+        <p>更多>></p>
+        <ul>
+        	<li>友情链接：</li>
+            <li>腾讯女性</li>
+            <li>列表网</li>
+            <li>太平洋女性网</li>
+            <li>多宝汇</li>
+            <li>七丽女性网</li>
+            <li>酷我音乐</li>
+            <li>LADYMAX时尚网</li>
+            <li>保葫芦</li>
+            <li>中国品牌服装店</li>
+            <li>优美网</li>
+            <li>男士时尚</li>
+            <li>哈秀时尚网</li>
+        </ul>
+    </div>
+    <div class="jw-z">
+    <p>Copyright&copy;2015Meilishuo.com 电信与信息服务业务经营许可证100798号 经营性网站备案信息 京ICP备11031139号 京公网安备110108006045<br/>
+    客服邮箱:kf@meilishuo.com 客服电话:400-800-577 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心 我最喜爱的人民警察评选>>反诈骗信息
+    </p>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>

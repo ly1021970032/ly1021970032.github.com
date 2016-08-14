@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{ overflow:hidden;}
+        #box{ width:100%;  position:absolute; bottom:0; text-align:center;}
+    </style>
+    <script>
+        window.onload=function(){
+            var aTxt=document.getElementsByTagName('input');
+            var oBox=document.getElementById('box');
+            var aImg=oBox.children;
+
+            document.onmousemove=function(ev){
+                var oEvent=ev||event;
+
+                for(var i=0;i<aImg.length;i++){
+                    var a=aImg[i].offsetWidth/2+aImg[i].offsetLeft+oBox.offsetLeft-oEvent.clientX;
+                    var b=aImg[i].offsetHeight/2+aImg[i].offsetTop+oBox.offsetTop-oEvent.clientY;
+
+                    var l=Math.sqrt(a*a+b*b);
+                    var scale=1-l/500;
+                    (scale <=.5) && (scale =.5);
+                    aImg[i].style.width=scale*128+'px';
+
+                    aTxt[i].value=scale;
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<input type="text" name="" >
+<input type="text" name="" >
+<input type="text" name="" >
+<input type="text" name="" >
+<input type="text" name="" >
+    <div id="box">
+        <img src="img2/1.png" width="64" alt="">
+        <img src="img2/2.png" width="64" alt="">
+        <img src="img2/3.png" width="64" alt="">
+        <img src="img2/4.png" width="64" alt="">
+        <img src="img2/5.png" width="64" alt="">
+    </div>
+</body>
+</html>

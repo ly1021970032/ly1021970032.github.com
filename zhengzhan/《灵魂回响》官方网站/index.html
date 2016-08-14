@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+body{background:url(img/bg.jpg)}
+.tou{ width:1000px; margin:0 auto;}
+.heads{width:1000px; height:55px; overflow:hidden;}
+.heads .heads-a{width:100%; height:50px; background:url(img/headbj.png) repeat-x; float:left;}
+.heads .heads-a .heads-p{width:100px; height:36px; margin:6px 13px; border-right:1px solid #cecece;}
+.heads .heads-c{width:551px; height:50px; float:right; margin-top:-48px; margin-right:13px;}
+.heads .heads-c li{float:left; line-height:50px; color:#333;}
+.heads .heads-c .heads-1{width:81px; height:50px; font-size:12px;}
+.heads .heads-c .heads-2{background:url(img/cyou_sprite.png) -138px 0 no-repeat; padding:6px 13px; margin-right:6px;}
+.heads .heads-c .heads-3{background:url(img/cyou_sprite.png) -188px 0 no-repeat; padding:6px 13px; margin-right:6px;}
+.heads .heads-c .heads-4{background:url(img/cyou_sprite.png) 0 -104px no-repeat; padding:6px 13px; margin-right:6px;}
+.heads .heads-c .heads-5{width:82px; height:50px; border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; text-align:center; font-size:12px; color:#4a4a4a; font-family:'微软雅黑';}
+.heads .heads-c .heads-6{width:112px; height:50px; border-right:1px solid #e1e1e1; text-align:center; font-size:12px; color:#4a4a4a; font-family:'微软雅黑';}
+.heads .heads-c .heads-7{width:110px; height:50px; border-right:1px solid #e1e1e1; text-align:center; font-size:12px; color:#4a4a4a; font-family:'微软雅黑';}
+.heads .heads-c .heads-8{background:url(img/cyou_sprite.png) -199px -135px no-repeat; padding:8px 8px;}
+.heads .heads-b{width:100%; float:left;}
+.heads .heads-b img{width:100%; height:100%;}
+.box{width:1000px; height:2568px; overflow:hidden; background:url(img/content.jpg) 0 551px no-repeat;}
+.box .boxs{width:100%; height:100px;}
+.box .aa{width:100%; height:551px; float:left;}
+.box .zz{width:100%; float:left;}
+.box .boxs .bb{position:absolute; left:176px; top:57px;}
+.box .boxs ul{position:absolute; right:172px; top:85px; font-family:'微软雅黑';}
+.box .boxs li{float:left; margin-left:13px; margin-right:13px; text-align:center;}
+.box .boxs a{color:#d1daf9; font-size:15px;}
+.box .boxs .cc{font-size:8px; font-family:none; color:#8088ad;}
+.box .boxs .dd{position:fixed; left:175px; top:300px; z-index:1;}
+.box .boxs .one{width:100%; height:108px; position:absolute; left:175px; bottom:-64px;}
+.box .boxs .one .one-a{width:366px; height:55px; margin-top:7px; margin-left:17px; position:absolute; right:358px; top:0;}
+.box .boxs .one .one-a p{font-size:14px; color:#adb9e0; margin-top:-50px; margin-bottom:9px;}
+.box .boxs .one .one-a .one-1{margin-top:-25px; margin-left:85px;}
+.box .boxs .one .one-a .one-2{margin-top:-45px; margin-left:85px;}
+.box .boxs .one .one-a span{color:#f00000;}
+.box .boxs .one .one-b{width:383px; height:43px; background:url(img/bj2.png) no-repeat; position:absolute; right:349px; top:68px; }
+.box .boxs .one .one-b p{font-size:12px; color:#adb9e0; margin-top:14px; margin-left:5px;}
+.box .boxs .one .one-b .one-1{color:#f93d1a;text-decoration:underline;}
+.box .boxs .one .one-b .one-3{background:url(img/sprite.jpg) -603px -227px no-repeat; padding:1px 7px;}
+.box .boxs .one .one-b .one-4{margin-left:35px;}
+.box .two{width:1000px; height:305px; margin-top:561px;}
+.box .two .two-a{position:relative; float:left;}
+.box .two .two-1{ position:absolute; left:10px; top:10px;}
+.box .two .two-2{ position:absolute; left:10px; top:83px;}
+.box .two .two-3{ position:absolute; right:12px; bottom:10px;}
+.box .two .two-b{width:383px; height:305px; float:left;}
+.box .two .two-b .two-q{width:383px; height:59px; background:url(img/bj3.png) no-repeat;}
+.box .two .two-b .two-q li{margin-top:22px; margin-left:34px; margin-right:33px; font-size:14px; color:#fefefe; font-family:'微软雅黑'; float:left;}
+.box .two .two-b .two-q .two-w{display:block; width:94px; height:57px; background:url(img/bj4.png); margin-top:3px; margin-left:0; text-align:center; line-height:57px; z-index:1;}
+.box .two .two-b .two-q .two-e{margin-left:0;}
+.box .two .two-b .two-c{width:382px; height:243px; background:#322e3f; border-top:1px solid #4b4e57;}
+.box .two .two-b .two-c .two-r{margin-top:18px; margin-left:17px;}
+.box .two .two-b .two-c .two-t{font-size:15px; color:#ff460f; margin-top:-25px; margin-left:66px; font-family:'微软雅黑';}
+.box .two .two-b .two-c p{font-size:12px; color:#9ca7ca; margin-top:13px; margin-left:25px;}
+.box .two .two-b .two-c .two-y{float:right; margin-right:18px;}
+.box .two .two-b .two-c .two-z{background:url(img/more.jpg) no-repeat; padding:1px 9px;}
+.box .three{width:1000px; height:134px; overflow:hidden; margin-top:33px;}
+.box .three .three-a{width:243px; height:132px; border:1px solid #433b4f; border-bottom:1px solid #433b4f; margin-right:5px; float:left;}
+.box .four{width:1000px; height:348px; overflow:hidden; margin-top:31px;}
+.box .four .four-a{ width:658px; background:url(img/bj6.png) no-repeat; float:left;}
+.box .four .four-b{margin-left:392px;}
+.box .four .four-o{ float:left;}
+.box .four .four-p{width:320px; height:348px; float:left; margin-left:20px; margin-top:-53px; position:relative;}
+.box .four .four-c{font-size:18px; color:#f3ca90;}
+.box .four .four-d{background:url(img/sprite.jpg) -628px 0 no-repeat; padding:6px 15px;}
+.box .four .four-f{width:319px; height:149px; border:1px solid #433b4f; margin-top:20px; background:url(img/1.jpg) no-repeat; margin-bottom:10px;}
+.box .four .four-g{width:319px; height:36px; background:#000; position:absolute; left:1px; top:155px; opacity:0.5; filter:alpha(opacity=50);}
+.box .four .four-j{font-size:13px; color:#fff; position:absolute; left:5px; top:166px;}
+.box .four .four-k{ display:block; width:321px; height:25px; background:url(img/bj8.png) no-repeat; font-size:12px; color:#a6b2d8; padding-left:27px; line-height:25px; font-family:'微软雅黑'; margin-bottom:3px;}
+.box .four .four-l{ float:right; margin-right:38px;}
+.box .five{width:1000px; height:785px; margin-top:31px; overflow:hidden;}
+.box .five .five-a{width:215px; height:800px; float:left;}
+.box .five .five-b{width:215px; height:188px; background:url(img/bj9.png) no-repeat; margin-bottom:23px;}
+.box .five .five-1{font-size:15px; color:#dbca90; padding-top:15px; margin-left:75px;}
+.box .five .five-b ul{font-size:14px; color:#8a7d9f; font-family:'微软雅黑'; margin-top:18px; margin-left:24px;}
+.box .five .five-b li{ float:left; line-height:29px; margin-right:25px;}
+.box .five .five-c{width:215px; height:589px; position:relative;}
+.box .five .five-2{position:absolute; left:5px; top:115px;}
+.box .five .five-3{position:absolute; right:5px; top:115px;}
+.box .five .five-4{display:block; width:205px; height:36px; background:url(img/bj10.png) no-repeat; text-align:center; line-height:36px; font-size:16px; color:#b1a1ca; font-family:'微软雅黑'; margin-top:5px; margin-left:5px;}
+.box .five .five-d{width:424px; height:800px; margin-left:19px; float:left; position:relative;}
+.box .five .five-5{background:url(img/sprite.jpg) -610px -348px no-repeat; padding:5px 22px;}
+.box .five .five-6{font-size:19px; color:#f3ca90;}
+.box .five .five-d .five-m{font-size:12px; color:#8e82a0; margin-top:17px;}
+.box .five .five-d .five-n{ display:block; width:104px; height:46px; float:left; text-align:center; line-height:46px; font-family:'微软雅黑';}
+.box .five .five-z{border-top:1px solid #433b4f; border-right:1px solid #433b4f;}
+.box .five .five-7{background:url(img/more.jpg) no-repeat; padding:1px 8px;}
+.box .five .five-d .five-q{border:1px solid #433b4f; border-bottom:none; background:#322b3c; color:#fff;}
+.box .five .five-d .five-w{width:422px; height:256px; border:1px solid #433b4f; background:#322b3c; position:absolute; left:0; top:85px; z-index:-1;}
+.box .five .five-d .five-o{border:none; text-align:center; line-height:46px;}
+.box .five .five-d .five-w .five-8{display:block; width:105px; height:197px; border:1px solid #433b4f; margin-top:23px; margin-left:15px; background:url(img/wj.jpg) no-repeat; float:left;}
+.box .five .five-d .five-w .five-p{font-size:12px; color:#a295b7; margin-top:25px; margin-left:18px; line-height:25px; float:left; font-family:'微软雅黑';}
+.box .five .five-9{background:url(img/sprite.jpg) -615px -382px no-repeat; padding:5px 22px;}
+.box .five .five-10{font-size:19px; color:#f3ca90; position:absolute; left:0; bottom:410px;}
+.box .five .five-d .five-t{font-size:12px; color:#8e82a0; margin-top:320px;}
+.box .five .five-d .five-n{ display:block; width:104px; height:46px; float:left; text-align:center; line-height:46px; font-family:'微软雅黑';}
+.box .five .five-dd{border-top:1px solid #433b4f; border-right:1px solid #433b4f;}
+.box .five .five-d .five-bb{border:1px solid #433b4f; border-bottom:none; background:#322b3c; color:#fff;}
+.box .five .five-d .five-cc{border:none; text-align:center; line-height:46px;}
+.box .five .five-d .five-aa{ display:block; width:104px; height:46px; float:left; text-align:center; line-height:46px; font-family:'微软雅黑';}
+.box .five .five-d .five-ee{width:422px; height:256px; border:1px solid #433b4f; background:#322b3c; position:absolute; left:0; bottom:91px; z-index:-1;}
+.box .five .five-d .five-ff{display:block; width:105px; height:197px; border:1px solid #433b4f; margin-top:23px; margin-left:15px; background:url(img/1031.jpg) no-repeat; float:left;}
+.box .five .five-d .five-gg{font-size:12px; color:#a295b7; margin-top:25px; margin-left:18px; line-height:25px; float:left; font-family:'微软雅黑';}
+.box .five .six{width:322px; height:800px; float:left; margin-left:20px; position:relative;}
+.box .five .six .six-a{background:url(img/tb1.png); width:26px; height:29px;}
+.box .five .six .six-b{font-size:19px; color:#f3ca90; position:absolute; left:26px; top:3px;}
+.box .five .six .six-c{width:320px; height:303px; border:1px solid #4b3f5c; margin-top:9px;}
+.box .five .six .six-c .six-aa{font-size:13px; color:#fff; width:70px; height:26px; text-align:center; line-height:26px; background:#594f67; margin-top:16px; margin-right:26px; float:left;}
+.box .five .six .six-c .six-bb{width:284px; height:58px; line-height:58px; border-bottom:1px dashed #594f67; font-size:12px; color:#9587ab; text-align:center; margin-left:19px; background:url(img/tubiao.png) 68px 24px no-repeat;}
+.box .five .six .six-c .six-cc{font-size:13px; color:#fff; width:79px; height:26px; text-align:center; line-height:26px; background:#594f67; margin-top:16px; margin-right:18px; float:left;}
+.box .five .six .six-c .six-dd{width:284px; height:58px; line-height:58px; font-size:12px; color:#9587ab; text-align:center; margin-left:19px; background:url(img/tubiao.png) 79px 24px no-repeat;}
+.box .five .six .six-c .six-ee{width:284px; height:58px; line-height:58px; border-bottom:1px dashed #594f67; font-size:12px; color:#9587ab; text-align:center; margin-left:19px; background:url(img/tubiao.png) 79px 24px no-repeat;}
+.box .five .six .six-c .six-ff{width:279px; height:39px; border:3px solid #4b3f5c; text-align:center; line-height:39px; margin-top:5px; margin-left:19px; font-size:22px; color:#b1a1ca;}
+.box .five .six .six-p{font-size:19px; color:#f3ca90; position:absolute; left:37px; top:373px;}
+.box .five .six .six-o{background:url(img/bj12.png); width:33px; height:31px; margin-top:23px;}
+.box .five .six .six-one{font-size:12px; color:#a295b7; margin-top:7px; font-family:'微软雅黑';}
+.box .five .six .six-two{width:104px; height:47px; border:1px solid #433b4f; border-bottom:none; background:#322b3c; text-align:center; line-height:47px; float:left;}
+.box .five .six .six-three{width:104px; height:47px; border-top:1px solid#433b4f; border-right:1px solid #433b4f; text-align:center; line-height:47px; float:left;}
+.box .five .six .six-four{width:104px; height:47px; text-align:center; line-height:47px; float:left; background:url(img/tibiao2.png) 12px 17px no-repeat}
+.box .five .six .six-z{width:321px; height:256px; border:1px solid #433b4f; border-right:none; background:#322b3c; position:absolute; left:0; bottom:91px; z-index:-1;}
+.box .five .six .six-five{margin-top:23px; margin-left:11px;}
+.box .five .six .six-six{margin-top:23px; margin-left:12px;}
+.box .five .six .six-seven{margin-top:23px; margin-left:11px;}
+.box .five .six .six-eight{margin-top:23px; margin-left:12px;}
+.box .foota{width:1000px; height:127px; background:url(img/game_anc.jpg) 57px 0 no-repeat;}
+.box .foota .foot-a{font-size:15px; color:#8a8695; font-family:'微软雅黑'; text-align:center; padding-top:10px;}
+.box .foota p{font-size:15px; color:#8a8695; font-family:'微软雅黑'; text-align:center; margin-top:10px;}
+.box .footb{width:1000px; height:110px; background:#181818;}
+.box .footb img{ float:left;}
+.box .footb p{font-size:12px; color:#535353; font-family:'微软雅黑';}
+.box .footb a{color:#535353;}
+.box .footb .foot-1{padding-top:32px;}
+.box .footb .foot-2{padding-top:12px;}
+.box .footb .foot-2 span{color:#767676;}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="tou">
+<div class="heads">
+	<div class="heads-a">
+    	<div class="heads-p"><img src="img/head1.png" /></div>
+        <div class="heads-c">
+            <ul>
+                <li class="heads-1"><span class="heads-2"></span>注册</li>
+                <li class="heads-1"><span class="heads-3"></span>充值</li>
+                <li class="heads-1"><span class="heads-4"></span>畅游+</li>
+                <li class="heads-5">客服<span class="heads-8"></span></li>
+                <li class="heads-6">畅游全服务<span class="heads-8"></span></li>
+                <li class="heads-7">畅游全游戏<span class="heads-8"></span></li>
+            </ul>
+        </div>
+    </div>
+	<div class="heads-b">
+    	<img src="img/head2.png" />
+    </div>
+</div>
+<div class="box">
+	<img src="img/header_main.jpg" class="aa"/>
+
+	<div class="boxs">
+    	<div>    
+        <a href="#"><img src="img/logo.gif"  class="bb"/></a>
+        <ul>
+            <li><a href="#">首页<br /><span class="cc">HOME</span></a></li>
+            <li><a href="#">新闻公告<br /><span class="cc">NEWS</span></a></li>
+            <li><a href="#">游戏特色<br /><span class="cc">FEATURES</span></a></li>
+            <li><a href="#">新手指南<br /><span class="cc">NEWBIE</span></a></li>
+            <li><a href="#">游戏下载<br /><span class="cc">DOWNLOAD</span></a></li>
+            <li><a href="#">活动专区<br /><span class="cc">ACTIVITY</span></a></li>
+            <li><a href="#">视觉欣赏<br /><span class="cc">VIDEO&PICTURE</span></a></li>
+            <li><a href="#">玩家互动<br /><span class="cc">INTERACTION</span></a></li>
+            <li><a href="#">客户服务<br /><span class="cc">SERVICE</span></a></li>
+        </ul>
+        <a href="#"><img src="img/sh.png" class="dd" /></a>
+        </div>
+        <div class="one">
+            <div><img src="img/xz.png" /></div>
+         	<div class="one-a">
+                <img src="img/sever.png" />
+                <p class="one-1">电信一区<span>【元素殿堂】</span>欢迎进驻</p>
+                <p class="one-2">网通一区<span>【雷霆之怒】</span>欢迎进驻</p>
+            </div>
+            <div class="one-b">
+                <p>距您上次访问有<span class="one-1">200</span>条更新<span class="one-3"></span><span class="one-4">关注：</span></p>
+            </div>
+        </div>	
+    </div>
+    <div class="two">
+    	<div class="two-a">
+        <img src="img/main_a1.jpg"  class="two-a"/>
+        <img src="img/slider_h_main.png" class="two-1" />
+        <img src="img/slider_media.png" class="two-2" />
+        <img src="img/fuhao.png" class="two-3" />
+        </div>
+        <div class="two-b">
+        	<div class="two-q">
+                <ul>
+                    <li>综合</li>
+                    <li class="two-w">新闻</li>
+                    <li class="two-e">公告</li>
+                    <li>媒体</li>
+                </ul>
+            </div>
+        	<div class="two-c">
+                <img src="img/bj5.png" class="two-r" />
+                <p class="two-t">4月8日大版开启 新职业术士魔神天降</p>
+                <p>【新闻】两大满级副本特色揭秘中级BOss曝光<span class="two-y">03/24</span></p>
+                <p>【新闻】揭秘术士进化史<span class="two-y">03/23</span></p>
+                <p>【新闻】竞技场上线！今日PVP激斗时代<span class="two-y">03/20</span></p>
+                <p>【新闻】天降神魔！新职业术士多图曝光<span class="two-y">03/19</span></p>
+                <p>【新闻】4月8日大版开启新职业术士魔神天降<span class="two-y">03/18</span></p>
+                <p>【新闻】萌属猴报表！大神手绘同人图大放送<span class="two-y">03/04</span></p>
+                <p class="two-y"><span class="two-z"></span>更多信息></p>
+            </div>
+        </div>
+    </div>
+	<div class="three">
+    	<div class="three-a">
+        <img src="img/main_a2 (3).jpg" />
+        </div>
+    	<div class="three-a">
+        <img src="img/main_a2 (1).jpg" />
+        </div>
+        <div class="three-a">
+        <img src="img/main_a2 (2).jpg" />
+        </div>
+        <div class="three-a">
+        <img src="img/main_a2.jpg" />
+        </div>
+    </div>
+	<div class="four">
+    	<div class="four-a"><img src="img/bj7.png" class="four-b" /></div>
+    	<div class="four-o"><img src="img/zhanshi.jpg" /></div>
+    	<div class="four-p">
+        <p class="four-c"><span class="four-d"></span>活动中心</p>
+        <div class="four-g"></div>
+        <div class="four-f"></div>
+        <p class="four-j">女武神的密保</p>
+        <p class="four-k">神谕者的成长礼<span class="four-l">进行中</span></p>
+        <p class="four-k">女神赐福助力成长。老友归来大礼相赠<span class="four-l">进行中</span></p>
+        <p class="four-k">赫尔墨斯的宝库。尼凯亚大陆奇珍异宝<span class="four-l">进行中</span></p>
+        <p class="four-k">绑定畅游+，送十格背包<span class="four-l">进行中</span></p>
+        <p class="four-k">每日登陆有惊喜<span class="four-l">进行中</span></p>
+        
+        </div>
+    </div>
+	<div class="five">
+    	<div class="five-a">
+        	<div class="five-b">
+                <p class="five-1">快捷入口</p>
+                <ul>
+                    <li>▪账号管理</li>
+                    <li>▪兑换中心</li>
+                    <li>▪账号安全</li>
+                    <li>▪畅游知道</li>
+                    <li>▪BUG提交</li>
+                    <li>▪客户端FAQ</li>
+                    <li>▪玩家社区</li>
+                    <li>▪加速器下载</li>
+                </ul>
+            </div>
+        	<div class="five-c">
+            <img src="img/main_a3.jpg" />
+            <img src="img/left.png" class="five-2"/>
+            <img src="img/prev.png" class="five-3" />
+            <p class="five-4">媒体合作专区</p>
+            <img src="img/bj11.png" />
+            </div>
+        </div>
+    	<div class="five-d">
+        	<p class="five-6"><span class="five-5"></span>玩家交流</p>
+            <ul class="five-m">
+            	<li class="five-q five-n">玩家攻略</li>
+                <li class="five-z five-n">论坛热帖</li>
+                <li class="five-z five-n">社区精华</li>
+            	<li class="five-o"><span class="five-7"></span>更多信息</li>
+            </ul>
+            <div class="five-w">
+                <span class="five-8"></span>
+                <ul class="five-p">
+                    <li>▪生活技能之烹饪技能详细解读</li>
+                    <li>▪称号：发现森林之秘 任务全程攻略</li>
+                    <li>▪屌丝逆袭 大神成长计划开启</li>
+                    <li>▪生活技能之烹饪技能详细解读</li>
+                    <li>▪阻止科萨特复活【英雄】成就攻略！</li>
+                    <li>▪独家攻略！灵魂回响效率冲级攻略！</li>
+                    <li>▪灵魂回响生活技能玩法介绍（二）</li>
+                    <li>▪灵魂回响生活技能玩法介绍（一）</li>
+                </ul>
+            </div>
+            <p class="five-10"><span class="five-9"></span>玩家交流</p>
+            <ul class="five-t">
+            	<li class="five-bb five-aa">17173</li>
+                <li class="five-dd five-aa">新浪爱问</li>
+                <li class="five-dd five-aa">太平洋游戏</li>
+            	<li class="five-cc"><span class="five-7"></span>更多信息</li>
+            </ul>
+            <div class="five-ee">
+                <span class="five-ff"></span>
+                <ul class="five-gg">
+                    <li>▪生活技能之烹饪技能详细解读</li>
+                    <li>▪称号：发现森林之秘 任务全程攻略</li>
+                    <li>▪屌丝逆袭 大神成长计划开启</li>
+                    <li>▪生活技能之烹饪技能详细解读</li>
+                    <li>▪阻止科萨特复活【英雄】成就攻略！</li>
+                    <li>▪独家攻略！灵魂回响效率冲级攻略！</li>
+                    <li>▪灵魂回响生活技能玩法介绍（二）</li>
+                    <li>▪灵魂回响生活技能玩法介绍（一）</li>
+                </ul>
+            </div>
+        </div>
+        <div class="six">
+        	<img src="img/tb1.png" class="six-a" />
+        	<p class="six-b">游戏资料</p>
+			<div class="six-c">
+                <p class="six-bb"><span class="six-aa">新手入门</span>注册账号|下载游戏|登录游戏</p>
+                <p class="six-bb"><span class="six-aa">职业介绍</span>刺客|神射手|守护者|魔法师</p>
+                <p class="six-ee"><span class="six-cc">旅行者日记</span>雷班斯|费尔图斯|赫利亚纳</p>
+                <p class="six-dd"><span class="six-cc">神谕者指引</span>1级-19级|20-39级|40-49级</p>
+                <p class="six-ff">进入资料站</p>
+            </div>
+                <img src="img/bj12.png" class="six-o" />
+                <p class="six-p">视觉欣赏</p>
+                <ul class="six-one">
+                	<li class="six-two">游戏视频</li>
+                	<li class="six-three">游戏截图</li>
+                    <li class="six-four">更多信息</li>
+                </ul>
+            <div class="six-z">
+            	<img src="img/3.jpg" class="six-five" />
+                <img src="img/2.jpg" class="six-six" />
+                <img src="img/1 (1).jpg" class="six-seven" />
+            	<img src="img/4.jpg" class="six-eight" />
+            </div>
+        </div>
+    
+    
+    
+    </div>
+	<div class="foota">
+    	<h4 class="foot-a">健康游戏公告</h4>
+        <p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活</p>
+        <p>本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+    </div>
+	<div class="footb">
+    	<img src="img/bj13.png" />
+    	<img src="img/foot.png" />
+        <p class="foot-1">北京畅游时代数码技术有限公司版权所有COPYRIGHT©2011CHANGYOU.COMLIMITED.ALLRIGHTSRESERVED.<a href="#">法律声明 | 联系我们</a></p>
+        <p class="foot-2"><span>京网文[2011]0260-093号|</span>京ICP：<span>070525号</span></p>
+    </div>
+
+</div>
+
+
+
+</div>
+</body>
+</html>

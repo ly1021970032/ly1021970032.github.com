@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration:none; color:#000;}
+.clearfix：after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+
+
+.w{width:1000px; margin:0 auto;}
+/*顶部导航*/
+.top-nav{width:100%; height:30px; border-bottom:1px solid #eee;}
+.top-nav-inner{height:30px;}
+.top-nav-inner ul{float:right;}
+.top-nav-inner .top-nav-list li{float:left; line-height:30px;}
+.top-nav-inner .top-nav-list li a{padding:0px 18px; border-right:1px dotted #303; font-size:12px; color:#666; line-height:18px; display:inline-block;}
+.top-nav-inner .top-nav-list li a.last{ border-right:none;}
+.top-nav-inner .top-nav-list li a span.wx{background:url(../img/11.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span.menber{ background:url(../img/12.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span.hy{background:url(../img/index.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li .hys{display:inline-block; width:19px; height:14px; background-color:#ff6699; text-align:center; line-height:14px; color:#fff; margin-left:3px;}
+.top-nav-inner .top-nav-list li a span.qq{background:url(../img/13.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span{background:url(../img/2.png) no-repeat; padding:3px 10px;}
+.top-nav-inner .top-nav-list li a span.over{ background-position:-223px -45px;}
+.top-nav-inner .top-nav-list li a span.sj{ background-position:-171px -45px;}
+.top-nav-inner .top-nav-list li a .car{padding-left:3px;}
+.to{width:1200px; height:137px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

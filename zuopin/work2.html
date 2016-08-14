@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+	<style>
+		.box{width: 300px;height: 300px;border-radius: 50%;margin: 100px auto;border: 1px solid purple;position: relative;}
+		.box span{width: 50px;height: 50px;background:green;position: absolute;left:50%;top: 0;border-radius: 50%;margin-left: -25px;margin-top: -25px;}
+	</style>
+	<script>
+		window.onload=function(){
+			var obox = document.getElementById('box');
+			 var ospan=obox.children[0];
+			var timer = null;
+			var r = obox.offsetWidth/2;
+			var m = 9;
+			for (var i = 0; i < m; i++) {
+				var ospan = document.createElement('span');
+				obox.appendChild(ospan);
+			}
+			var aspan = obox.children;
+			var bsys = true;
+			/*for (var i = 0; i < aspan.length; i++) {
+				
+				var deg = 360/m*i;
+				var x = r+r*Math.sin(deg*Math.PI/180);
+				var y = r-r*Math.cos(deg*Math.PI/180);
+				aspan[i].style.left=x+'px';
+				aspan[i].style.top=y+'px';
+			}*/
+
+
+			document.onclick=function(){
+				if (bsys) {
+					for (var i = 0; i < aspan.length; i++) {
+						var deg = 360/m*i;
+						wl(aspan[i],deg);
+					}
+				} else{
+					for (var i = 0; i < aspan.length; i++) {
+						/*var deg = 360/m*i;*/
+						wl(aspan[i],0);
+					}
+				}
+				bsys=!bsys;
+			}
+
+			function wl(obj,target){
+				clearInterval(obj.timer);
+				/*var a = 0;*/
+				var count = Math.ceil(1000/30);
+				var start = obj.a || 0;
+				var dis = target-start;//圆周度数，即运动路程
+				var n = 0;
+				obj.timer = setInterval(function(){
+					n++;
+					var a = n/count; /*var a = 1-n/count;*/
+					var cur = start+dis*a;  /*var cur = dis*(1-a*a*a);*/   //dis/count*n
+					var x = r+r*Math.sin(cur*Math.PI/180);
+					var y = r-r*Math.cos(cur*Math.PI/180);
+					obj.a = cur;
+					obj.style.left = x+'px';
+					obj.style.top = y+'px';
+					if (n==count) {
+						clearInterval(obj.timer);
+					}
+				},30)
+			}	
+		}
+	</script>
+</head>
+<body>
+	<div class="box" id="box">
+	</div>
+</body>
+</html>

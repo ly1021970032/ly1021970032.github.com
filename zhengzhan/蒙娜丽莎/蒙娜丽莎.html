@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+.bt{width:100%; height:120px; background:url(img/bj1.png) repeat-x; border-bottom:1px solid #231006;}
+.bt .bt-1{margin-left:272px;}
+.bt .bt-2{margin-left:205px; margin-bottom:25px;}
+.br{width:100%; height:43px; background:url(img/bj3.png) repeat-x;}
+.br ul{padding-top:14pz; margin-left:208px; overflow:hidden;}
+.br li{ padding-left:17px; margin-top:14px; margin-right:17px;  border-left:1px solid #74472d; float:left; font-size:12px; color:#e5d4cb;}
+.br .br-1{border-left:none;}
+.br .br-2{position:absolute; left:1109px; top:129px;}
+.br .br-2 .l{width:7px; height:24px; background:url(img/hd1.png); position:absolute; left:0; top:0;}
+.br .br-2 .r{width:7px; height:24px; background:url(img/hd2.png); position:absolute; right:0; top:0;}
+.br .br-2 .m{height:24px; color:#a77f5c; font-size:12px; line-height:24px; background:url(img/hd.png) repeat-x; padding-left:10px; padding-right:11px;}
+.be{width:100%; height:448px; margin-top:-2px; margin-left:-150px;}
+.bw{width:100%; height:44px;}
+.bq{width:960px; height:62px; margin-left:192px; background-color:#f2f2f2; overflow:hidden;}
+.bq .bq-a{width:330px; height:52px; border-right:1px solid #979796; float:left; margin-left:23px; padding-top:10px;}
+.bq .bq-a dt{float:left; margin-right:9px;}
+.bq-a dd{float:left; font-size:12px; color:#9c9c9c; line-height:10px;}
+.bq .bq-a .bq-1{font-size:12px; color:#9c5f2c; margin-top:10px;}
+.bq .bq-a .bq-2{font-size:17px; color:#9c5f2c; margin-top:7px; font-family:'微软雅黑';}
+.bq .bq-b{float:left;}
+.bq .bq-b .bq-4{font-size:12px; color:#9c9c9c; padding-top:19px; margin-left:16px; float:left; width:60px;}
+.bq .bq-b .bq-3{font-size:14px; color:#9c5f2c; margin-left:16px;}
+.bq-b ul{width:176px; float:left; margin-top:12px;}
+.bq-b li{width:44px; float:left;}
+.bq-c{font-size:12px; color:#9b5d2b;}
+.by{width:960px; height:310px; overflow:hidden; margin-top:15px; margin-left:192px;}
+.by img{ float:left;}
+.by .by-1{margin:0 15px;}
+.bu{width:960px; height:150px; margin-top:15px; margin-left:192px;}
+.bi{width:960px; height:88px; margin-left:192px; background:url(img/bt2.png) 0 68px no-repeat; overflow:hidden;}
+.bi img{float:left;}
+.bi ul{float:right; margin-top:44px;}
+.bi li{float:left; font-size:12px; color:#787878; width:46px; height:13px; border-right:1px solid #ba9bba; text-align:center;}
+.bi .bi-1{border-right:none; display:block;}
+.bo{width:960px; height:496px; margin-left:192px; overflow:hidden; position:relative;}
+.bo .bo-a{float:left;}
+.bo .bo-g img{float:left;}
+.bo .bo-f{width:310px; height:496px; overflow:hidden;}
+.bo .bo-g{width:635px; height:496px; margin-left:15px; float:left;}
+.bo .bo-g .bo-2{width:310px; height:258px; float:left; margin-left:15px; background:url(img/c3.png) no-repeat;}
+.bo .bo-g .bo-3{width:310px; height:258px; margin-top:-2px; float:left; background:url(img/c4.png) no-repeat;}
+.bo .bo-g .bo-4{width:310px; height:258px; margin-top:-2px; float:left; margin-left:15px; background:url(img/c5.png) no-repeat;}
+.bo .bo-g .bo-1{width:310px; height:258px; float:left; background:url(img/c2.png) no-repeat;}
+.bo .bo-g P{margin-top:210px; margin-left:10px; font-size:11px; color:#787878;}
+.bo .bo-h{position:absolute; left:15px; top:200px;}
+.bo .bo-j{position:absolute; left:265px; top:200px;}
+.bo .bo-k{width:310px; height:41px; background:#000; position:absolute; left:0; bottom:0; opacity:0.5; filter:alpha(opacity=50);}
+.bo .bo-l{width:310px; height:41px; position:absolute; left:0; bottom:0; line-height:41px; padding-left:236px; font-size:15px; color:#fff; font-family:'微软雅黑';}
+.bp{width:960px; height:99px; background-color:pink; margin-left:192px; background:url(img/bt2.png) 0 79px no-repeat; overflow:hidden;}
+.bp img{float:left;}
+.bp ul{float:right; margin-top:44px;}
+.bp li{float:left; font-size:12px; color:#787878; width:46px; height:13px; border-right:1px solid #ba9bba; text-align:center;}
+.bp .bp-1{border-right:none; display:block;}
+.bz{width:960px; height:496px; margin-left:192px; overflow:hidden; position:relative;}
+.bz .bz-a{float:left;}
+.bz .bz-g img{float:left;}
+.bz .bz-f{width:310px; height:496px; overflow:hidden;}
+.bz .bz-g{width:635px; height:496px; margin-left:15px; float:left;}
+.bz .bz-g .bz-2{width:310px; height:258px; float:left; margin-left:15px; background:url(img/bj8.png) no-repeat;}
+.bz .bz-g .bz-3{width:310px; height:258px; margin-top:-2px; float:left; background:url(img/bj9.png) no-repeat;}
+.bz .bz-g .bz-4{width:310px; height:258px; margin-top:-2px; float:left; margin-left:15px; background:url(img/bj10.png) no-repeat;}
+.bz .bz-g .bz-1{width:310px; height:258px; float:left; background:url(img/bj7.png) no-repeat;}
+.bz .bz-g P{margin-top:210px; margin-left:10px; font-size:11px; color:#787878;}
+.bz .bz-h{position:absolute; left:15px; top:200px;}
+.bz .bz-j{position:absolute; left:265px; top:200px;}
+.bz .bz-k{width:310px; height:41px; background:#000; position:absolute; left:0; bottom:0; opacity:0.5; filter:alpha(opacity=50);}
+.bz .bz-l{width:310px; height:41px; position:absolute; left:0; bottom:0; line-height:41px; padding-left:225px; font-size:15px; color:#fff; font-family:'微软雅黑';}
+.bx{width:960px; height:99px; background-color:pink; margin-left:192px; background:url(img/bt2.png) 0 79px no-repeat; overflow:hidden;}
+.bx img{float:left;}
+.bx ul{float:right; margin-top:44px;}
+.bx li{float:left; font-size:12px; color:#787878; width:46px; height:13px; border-right:1px solid #ba9bba; text-align:center;}
+.bx .bx-1{border-right:none; display:block;}
+.bb{width:960px; height:815px; margin-left:192px; overflow:hidden;}
+.bb .bb-a{width:229px; height:402px; background:url(img/bj12.png) no-repeat; float:left; margin-right:14px;}
+.bb .bb-b{width:229px; height:402px; background:url(img/bj13.png) no-repeat; float:left; margin-right:14px;}
+.bb .bb-c{width:229px; height:402px; background:url(img/bj14.png) no-repeat; float:left; margin-right:14px;}
+.bb .bb-d{width:229px; height:402px; background:url(img/bj15.png) no-repeat; float:left;}
+.bb .bb-e{width:229px; height:402px; background:url(img/bj16.png) no-repeat; float:left; margin-right:14px; margin-top:10px;}
+.bb .bb-f{width:229px; height:402px; background:url(img/bj17.png) no-repeat; float:left; margin-right:14px; margin-top:10px;}
+.bb .bb-g{width:229px; height:402px; background:url(img/bj18.png) no-repeat; float:left; margin-right:15px; margin-top:10px;}
+.bb .bb-h{width:229px; height:402px; background:url(img/bj19.png) no-repeat; float:left; margin-top:10px;}
+.bb p{margin-top:374px; margin-left:8px; color:#787878;}
+.bc{width:960px; height:99px; background-color:pink; margin-left:192px; background:url(img/bt2.png) 0 79px no-repeat; overflow:hidden;}
+.bc img{float:left;}
+.bc a{float:right; margin-top:50px; margin-right:8px; color:#787878; font-size:12px;}
+.bc img{margin-top:27px;}
+.bv{width:960px; height:245px; margin-left:192px; overflow:hidden;}
+.bv-l{width:310px; height:245px; float:left; background:url(img/bj21.png) no-repeat;}
+.bv-l p{margin-top:215px; margin-left:6px; font-size:12px;}
+.rmb{float:right; color:red; margin-right:10px;}
+.bv-2{width:635px; height:245px; float:left; margin-left:15px;}
+.bv-2 h1{font-size:14px; color:#3c2112; font-weight:bold; line-height:24px;}
+.bv-2 p{color:#3c2112; line-height:24px; font-weight:bold; font-size:12px; font-family:'微软雅黑';}
+.bv-2 a{float:right; line-height:16px; color:#83471d; font-weight:bold; margin-top:14px; margin-right:10px; font-size:12px;}
+.bb{width:960px; height:245px; margin-top:14px; margin-left:192px;}
+.bb-1{width:310px; height:245px; background:url(img/bj-1.png) no-repeat; float:left;}
+.bb-2{width:310px; height:245px; background:url(img/bj-2.png) no-repeat; float:left; margin:0 15px;}
+.bb-3{width:310px; height:245px; background:url(img/bj-3.png) no-repeat; float:left;}
+.bn{width:960px; height:343px; margin-top:14px; margin-left:192px; overflow:hidden;}
+.bn .bn-a{width:489px; height:343px; float:left; background:url(img/jfsc_line.png) no-repeat 0 25px;;}
+.bn h1{font-size:20px; color:#3c2112; margin-left:2px; font-weight:bold; font-family:'微软雅黑';}
+.bn .bn-a .bn-b{width:489px; height:298px; margin-top:-11px;}
+.bn .bn-a .bn-1{width:148px; height:133px; border:2px solid #e5e5e5; text-align:center; float:left; margin-right:10px; margin-bottom:-12px; color:#787878;}
+.bn .bn-a .bn-1 img{margin:6px 0px;}
+.bn-d{width:241px; height:330px; float:left; background:url(img/gfwj_line.png) no-repeat 0 25px;}
+.bn-1{width:218px; height:274px; border:1px solid #e5e5e5; margin-top:25px;}
+.bn-2{width:198px; height:72px; border-bottom:9px solid #e7e7e7; margin:0 10px;}
+.bn-2 dl{width:198px; height:72px;}
+.bn-2 dt{float:left; margin:12px 10px 0 5px;}
+.bn-2 dd{float:left;}
+.bn-3{font-size:14px; color:#5093d5; margin-bottom:14px; margin-top:10px;}
+.bn-2 a{display:inline-block;width:64px; height:24px; background:url(img/jgz_bj.png) repeat-x; text-align:center; color:#FFF; font-family:'微软雅黑';}
+.bn-4 span{font-size:18px; font-weight:bold; line-height:18px; height:18px;}
+.bn-t{width:186px; height:65px; border-left:1px solid #e5e5e5; border-right:1px solid #e5e5e5; margin:0 15px;}
+.bn-t p{line-height:28px; margin-left:10px;}
+.bn-p{width:198px; height:113px; border-top:9px solid #e7e7e7; margin:0 10px;}
+.bn-p p{margin-left:10px; line-height:40px;}
+.bn-p a{float:right; color:#5093d5;}
+.bn-p ul{width:200px; margin-left:8px;}
+.bn-p li{width:50px; float:left; text-align:center; margin-right:16px;}
+.bn-p a{color:#5093d5; text-align:center; width:50px; display:inline-block;}
+.bn-l{width:230px; height:340px; float:left; background:url(img/fwxts_line.png) no-repeat 0 25px;}
+.bn-x{width:200px; height:295px; margin-top:25px;}
+.bn-x li{color:#787878; line-height:29px; background:url(img/fwxts_tb.png) no-repeat 0 13px; padding-left:7px;}
+.bm{width:960px; height:96px; background:url(img/bt2.png) no-repeat 0 25px; margin-top:10px; margin-left:192px;}
+.bm h1{font-size:20px; color:#3c2112; margin-left:2px; font-weight:bold; font-family:'微软雅黑'; margin-bottom:15px;}
+.bm span{float:right; color:#9b9b9b; font-weight:normal;}
+.bm-a{width:960px; height:64px;}
+.bm-a a{display:inline-block; float:left; line-height:24px; margin-right:25px; color:#83471d;}
+.sw{width:1344px; height:318px; border-top:1px solid #ddd; overflow:hidden;}
+.sw-a{width:1344px; height:175px; background:url(img/foot_line.png) no-repeat 769px 0px #eee;}
+.sw-b{width:577px; height:175px; float:left; margin-left:192px;}
+.sw-c{width:118px; height:175px; float:left; margin-right:20px;}
+.sw-c dt{border-bottom:1px solid #705c51; font-size:14px; padding-bottom:18px;margin-top:20px; margin-bottom:8px; color:#787878;}
+.sw-c dd{line-height:24px; color:#787878;}
+.sw-d{width:383px; height:175px; float:left;}
+.sw-e{width:201px; height:55px; margin-left:42px; margin-bottom:15px; margin-top:25px;}
+.sw-e dt{float:left; margin-right:6px;}
+.sw-e dd{float:left;}
+.sw-e .onle{line-height:30px; font-size:14px; color:#898889;}
+.sw-e img{margin-right:6px;}
+.sw-f{width:344px; height:45px; margin-left:38px;}
+.sw-f dt{float:left;}
+.sw-f dt{float:left; margin-right:6px;}
+.sw-f dd{float:left; font-size:12px;}
+.sw-f span{font-size:8px;}
+.sw-g{color:#9a6735;}
+.sw-l{width:1344px; height:123px; background:#3c2112; text-align:center; padding-top:16px; color:#fff; line-height:22px;}
+
+</style>
+
+</head>
+
+<body>
+<div class="bt">
+    <img src="img/logo1.png" / class="bt-1">
+    <img src="img/bj2.png" /class="bt-2">
+</div>
+<div class="br">
+    <ul>
+        <li class="br-1">首页</li>
+        <li>影楼报价</li>
+        <li>作品展示</li>
+        <li>场馆介绍</li>
+        <li>客片欣赏</li>
+        <li>积分商城</li>
+        <li>官方汇款</li>
+        <li>网络预约</li>
+        <li>官方微博</li>
+    </ul>
+    <div class="br-2">
+         <i class="l"></i>
+         <p class="m">收藏</p>
+         <i class="r"></i>
+    </div>
+</div>
+<div class="be">
+	<img src="img/datu.jpg" />
+</div>
+<div>
+	<img src="img/bj4.png" />
+</div>
+<div class="bq">
+	<div class="bq-a">
+        <dl>
+            <dt><img src="img/a1.png" /></dt>
+            <dd>IFYOU HAVE ANY OUESTIONS.<br/>
+            PLEASE CONTRACT WITH US.</dd>
+            <dd class="bq-1"><span class="bq-2">400-0905-520</span>(周六日不休)</dd>
+        </dl>
+    </div>
+    <div class="bq-a">
+        <dl>
+            <dt><img src="img/a2.png" /></dt>
+            <dd>WORK TEME<br/>
+            AM.9：00~PM.10：00</dd>
+            <dd class="bq-1">公司地址：北京东城区东四南大街143号</dd>
+        </dl>
+    </div>
+    <div class="bq-b">
+		<p class="bq-4">SERVICE<br/>
+        <span class="bq-c">在线客服</span></p>
+        <ul>
+        <li><img src="img/a3.png" /></li>
+        <li><img src="img/a4.png" /></li>
+        <li><img src="img/a5.png" /></li>
+        <li><img src="img/a6.png" /></li>
+        </ul>
+    </div>
+</div>
+<div class="by">
+<img src="img/bj1-1.png" />
+<img src="img/bj1-2.png" / class="by-1">
+<img src="img/bj1-3.png" />
+</div>
+<div class="bu">
+<img src="img/banner.jpg" />
+</div>
+<div class="bi">
+    <img src="img/bt1.png" />
+    <ul>
+        <li>北京</li>
+        <li>洛阳</li>
+        <li>西安</li>
+        <li class="bi-1">唐山</li>
+    </ul>
+</div>
+<div class="bo">
+	<div>
+        <img src="img/c1.png" / class="bo-a">
+        <img src="img/arr_l.gif" / class="bo-h">
+        <img src="img/arr_r.gif" / class="bo-j">
+        <div class="bo-k"></div>
+        <div class="bo-l">场馆包间</div>
+    </div>
+	<div class="bo-g">
+ 		<div class="bo-1">
+        <p>洛丽塔</p>
+        </div>
+        <div class="bo-2">
+        <p>克里斯丁</p>
+        </div>
+        <div class="bo-3">
+        <p>夏·宫</p>
+        </div>
+        <div class="bo-4">
+        <p>伯爵庄园</p>
+        </div>
+	</div>
+</div>
+<div class="bp">
+    <img src="img/bj6.png" />
+    <ul>
+    	<li>北京</li>
+        <li>洛阳</li>
+        <li>西安</li>
+        <li class="bp-1">唐山</li>
+    </ul>
+</div>
+<div class="bz">
+	<div>
+        <img src="img/2014-08-15-14-02-54.jpg"/ class="bz-a">
+        <img src="img/arr_l.gif" / class="bz-h">
+        <img src="img/arr_r.gif" / class="bz-j">
+        <div class="bz-k"></div>
+        <div class="bz-l">婚礼纪实风</div>
+    </div>
+	<div class="bz-g">
+ 		<div class="bz-1">
+        <p>溪谷乐园</p>
+        </div>
+        <div class="bz-2">
+        <p>印象风</p>
+        </div>
+        <div class="bz-3">
+        <p>婚礼纪实风</p>
+        </div>
+        <div class="bz-4">
+        <p>浪漫花海</p>
+        </div>
+	</div>
+</div>
+<div class="bx">
+    <img src="img/bj11.png" />
+    <ul>
+    	<li>北京</li>
+        <li>洛阳</li>
+        <li>西安</li>
+        <li class="bx-1">唐山</li>
+    </ul>
+</div>
+<div class="bb">
+    <div class="bb-a"><p>客片4</p></div>
+    <div class="bb-b"><p>客片1</p></div>
+    <div class="bb-c"><p>客片3</p></div>
+    <div class="bb-d"><p>客片2</p></div>
+    <div class="bb-e"><p>客片</p></div>
+    <div class="bb-f"><p>青春的回忆</p></div>
+    <div class="bb-g"><p>绿</p></div>
+    <div class="bb-h"><p>客片</p></div>
+</div>
+<div class="bc">
+    <img src="img/bj20.png" />
+    <a href="#">>>更多报价</a>
+</div>
+<div class="bv">
+   <div class="bv-l">
+       <p><span class="rmb">RMB:10999</span>原价26666，网络特惠价10999</p>
+   </div>
+   <div class="bv-2">
+       <h1>蒙娜丽莎“克里斯汀会所</h1>
+       <p>1995年，中国和新加坡金尼影像合力打造的蒙娜丽莎在西安创立，凭借专业先进的摄影技术和贴心周到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几...<br/>
+          北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！<br/>
+          到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！<br/></p>
+        <a href="#">>>详情介绍</a>
+   </div>
+</div>
+<div class="bb">
+     <div class="bb-1">
+         <p><span class="rmb">RMB:5999</span>原价16666，网络特惠价5999</p>
+     </div>
+     <div class="bb-2">
+         <p><span class="rmb">RMB:7999</span>原价19999，网络特惠价7999</p>
+     </div>
+     <div class="bb-3">
+         <p><span class="rmb">RMB:13999</span>蒙娜丽莎克丽丝汀专属套系：13999</p>
+     </div>
+</div>
+<div class="bn">
+        <div class="bn-a">
+        <h1>积分商城</h1>
+        <div class="bn-b">
+        	<div class="bn-1">
+                <img src="img/jfsc_1.png" /><br/>
+                Chanel 香奈儿 No5女...
+            </div>
+            <div class="bn-1">
+                <img src="img/jfsc_2.png" /><br/>
+                九阳(joyoung)豆浆...
+            </div>
+            <div class="bn-1">
+                <img src="img/jfsc_3.png" /><br/>
+                Anna sui安娜苏许愿精...
+            </div>
+            <div class="bn-1">
+                <img src="img/jfsc_4.png" /><br/>
+                北京移动充值卡100元
+            </div>
+            <div class="bn-1">
+                <img src="img/jfsc_5.png" /><br/>
+                飞利浦(Philips)HQ6
+            </div>
+            <div class="bn-1">
+                <img src="img/jfsc_6.png" /><br/>
+                飞利浦(Philips)HD745...
+            </div>
+        </div>
+        </div>
+        <div class="bn-d">
+        <h1>官方微博</h1>
+        <div class="bn-1">
+        	<div class="bn-2">
+                <dl>
+                    <dt><img src="img/mnsy.png" /></dt>
+                    <dd class="bn-3">北京蒙娜丽莎摄影V</dd>
+                    <dd class="bn-4"><a href="#"><span>+</span>加关注</a></dd>
+                </dl>
+            </div>
+            <div class="bn-t">
+            <p>美<img src="img/bq.png" />如果有朋友需要，我推荐北京蒙娜丽莎，真的很棒喔<img src="img/bq_2.png" /><img src="img/bq_3.png" /></p>
+            </div>
+            <div class="bn-p">
+            <p><a href="#">全部>></a>TA的粉丝(126847)</p>
+            <div>
+            <ul>
+            	<li><img src="img/fs_1.png" /><br/>
+                <a href="#">弓長VS</a>
+                </li>
+                <li><img src="img/fs_2.png" /><br/>
+                <a href="#">晨曦wrty</a>
+                </li>
+                <li><img src="img/fs_3.png" /><br/>
+                <a href="#">子建飞鱼</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="bn-l">
+        <h1>服务小贴士</h1>
+        <div class="bn-x">
+            <ul>
+            	<li>新郎拍摄婚纱照注意事项</li>
+                <li>时下正流行 复古怀旧婚纱照</li>
+                <li>北京婚纱摄影小编告诉你拍完婚...</li>
+                <li>怎样拍摄凸显娴雅美资的韩式婚...</li>
+                <li>让新娘从头美到脚的婚纱照姿势...</li>
+                <li>新郎拍婚纱照时需要注意的事项...</li>
+                <li>北京婚纱婚纱摄影分享四大经典...</li>
+                <li>新娘必看 新娘装搭配谨防误区</li>
+                <li>小小改变 让结婚证件更美丽</li>
+                <li>北京婚纱影楼告诉你新娘旗袍婚...</li>
+            </ul>
+        </div>
+        </div>
+</div>
+<div class="bm">
+    <h1><span>友情链接QQ：787835815</span>友情链接link</h1>
+	<div class="bm-a">
+    	<ul>
+        	<li><a href="#">北京儿童摄影</a></li>
+            <li><a href="#">婚纱照团购</a></li>
+            <li><a href="#">北京婚纱摄影</a></li>
+            <li><a href="#">北京妈妈网</a></li>
+            <li><a href="#">秦皇岛婚纱摄影</a></li>
+            <li><a href="#">北京婚博会</a></li>
+            <li><a href="#">武汉婚纱摄影</a></li>
+            <li><a href="#">北京婚纱摄影</a></li>
+            <li><a href="#">深圳婚纱摄影工作室</a></li>
+            <li><a href="#">北京婚纱</a></li>
+            <li><a href="#">摄影</a></li>
+        </ul>
+    </div>
+</div>
+<div class="sw">
+	<div class="sw-a">
+    	<div class="sw-b">
+        	<div class="sw-c">
+            	<dl>
+                	<dt>蒙娜丽莎/主页</dt>
+                    <dd>北京婚姻摄影网</dd>
+                    <dd>关于蒙娜丽莎</dd>
+                    <dd>联系我们</dd>
+                    <dd>婚姻客片分享</dd>
+                </dl>
+            </div>
+            <div class="sw-c">
+            	<dl>
+                	<dt>作品展示</dt>
+                    <dd>外景婚纱作品</dd>
+                    <dd>内景婚纱作品</dd>
+                    <dd>高端婚纱摄影</dd>
+                    <dd>写真客片分享</dd>
+                </dl>
+            </div>
+            <div class="sw-c">
+            	<dl>
+                	<dt>新闻动态</dt>
+                    <dd>最新优惠</dd>
+                    <dd>最新动态</dd>
+                    <dd>服务小贴士</dd>
+                    <dd>官方汇款账号</dd>
+                </dl>
+            </div>
+            <div class="sw-c">
+            	<dl>
+                	<dt>SCENE 场景介绍</dt>
+                    <dd>内景婚纱照</dd>
+                    <dd>外景婚纱照</dd>
+                    <dd>外景区</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="sw-d">
+        	<div class="sw-e">
+            	<dl>
+                <dt><img src="img/fqe_1.png" /></dt>
+                <dd class="onle">ONLINE SERVICE</dd>
+                <dd><img src="img/fqe_2.png" /><img src="img/fqe_3.png" /><img src="img/fqe_4.png" /><img src="img/fqe_5.png" /><img src="img/fqe_6.png" /></dd>
+                </dl>
+            </div>
+            <div class="sw-f">
+            	<dl>
+                <dt><img src="img/fsj_1.png" /></dt>
+                <dd><span>WORK TIME</span><br/>
+                AM.9:00 ~ PM.10:00</dd>
+                <dd class="sw-g">公司地址：北京市东城区东四南大街143号</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="sw-l">
+    <p>北京婚纱摄影 | 婚纱照展示 | 影楼报价 | 摄影动态 | 联系我们</p>
+    <p>版权所有 &copy; 2007-2012 北京蒙娜丽莎摄影有限公司 Map | Tag <img src="img/fo_tb.png" /> 站长统计</p>
+    <p>北京蒙娜丽莎唯一官网：http://www.mnlsbj.com/ 京ICP备12018289号</p>
+    <p>热门推荐：北京婚纱摄影、北京婚纱影楼、婚纱照或婚纱摄影外景，尽在蒙娜丽莎！网站技术、SEO优化支持：东辉创新</p>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

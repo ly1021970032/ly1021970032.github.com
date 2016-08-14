@@ -1,0 +1,19 @@
+﻿
+
+#wrapper {width:1000px;margin:0px auto;padding:0 0 20px 0;}
+
+#container {
+  background:url(img/gradient.jpg);
+  position:relative;
+  width:1000px;
+  height:480px;
+}
+
+#overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  width:1000px;
+  height:480px;
+  background:url(img/overlay.png);
+}
